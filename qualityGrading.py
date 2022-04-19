@@ -157,7 +157,7 @@ else:
     os.makedirs(save_dir)
 
 best_acc = 0
-writer_train = SummaryWriter('/home/train') #数据存放在这个文件夹
+writer_train = SummaryWriter('/home/train') 
 writer_val = SummaryWriter('/home/val')
 writer_train.add_scalar('loss', 10, 0)
 writer_train.add_scalar('accuracy', 0, 0)
