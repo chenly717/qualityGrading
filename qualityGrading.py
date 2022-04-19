@@ -164,7 +164,7 @@ writer_train.add_scalar('accuracy', 0, 0)
 writer_val.add_scalar('loss', 10, 0)
 writer_val.add_scalar('accuracy', 0, 0)
 
-for epoch in range(48):
+for epoch in range(100):
     scheduler.step()
     print('\n Version: %s Epoch: %d | learning rate:%f' % (version, epoch, get_lr(optimizer)))
     train_loss, train_acc, val_loss, val_acc = train_val(net, criterion, optimizer, dataLoader['train'], dataLoader['val'])
